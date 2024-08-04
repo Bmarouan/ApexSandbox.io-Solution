@@ -2,5 +2,8 @@ public String aOrAn(String word) {
     if (word.startsWith('a') || word.startsWith('e') || word.startsWith('i')){
         String result = 'an '+ word;
         return result;
+    } else {
+        String result2 = 'a '=word;
+        return result2;
     }
 }
