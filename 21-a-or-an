@@ -3,7 +3,7 @@ public String aOrAn(String word) {
         String result = 'an '+ word;
         return result;
     } else {
-        String result2 = 'a '=word;
+        String result2 = 'a '+word;
         return result2;
     }
 }
