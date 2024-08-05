@@ -1,7 +1,7 @@
 public Id insertStudent(String name, String email) {
     apxio__Student__c st  = new apxio__Student__c() ;
-    st.Name = 'abas';
-    st.apxio__Email__c = 'abas@gmail.com';
+    st.Name = name;
+    st.apxio__Email__c = email;
     insert st;
 
     apxio__Student__c recordStudent = [Select id, apxio__Registration_Number__c
