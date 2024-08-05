@@ -1,6 +1,6 @@
 public Id insertStudent(String name, String email) {
     apxio__Student__c st  = new apxio__Student__c() ;
-  String apxio__Email__c;
+    st.Name = 'ok';
     st.apxio__Email__c = 'Test';
     insert st;
 
