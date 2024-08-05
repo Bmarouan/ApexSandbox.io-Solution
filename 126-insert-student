@@ -1,7 +1,7 @@
 public Id insertStudent(String name, String email) {
-    List<apxio__Student__c> apxio__Student__c  = new List<apxio__Student__c>() ;
+    List<apxio__Student__c> st  = new List<apxio__Student__c>() ;
   
-    apxio__Student__c.apxio__Email__c = 'Test';
-    insert apxio__Student__c;
+    st.apxio__Email__c = 'Test';
+    insert st;
 
 }
