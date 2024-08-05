@@ -4,6 +4,6 @@ public Id insertCourse(String name, String details, Integer credits) {
     course.apxio__Credits__c = credits;
     course.Name = name;
     insert course;
-    return course.id
+    return course.id;
 
 }
