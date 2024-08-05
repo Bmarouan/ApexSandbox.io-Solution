@@ -5,5 +5,5 @@ public Id insertStudent(String name, String email) {
     insert st;
 
  
-    return st.apxio__Registration_Number__c;
+    return st.id;
 }
