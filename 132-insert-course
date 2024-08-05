@@ -1,7 +1,9 @@
 public Id insertCourse(String name, String details, Integer credits) {
     apxio__Course__c course = new apxio__Course__c();
     course.apxio__Course_Details__c = details;
-    course.valueOf(apxio__Credits__c) = credits;
+
+    String value = valueof(credits);
+    course.apxio__Credits__c = value;
     course.Name = name;
     insert course;
     return course.id;
