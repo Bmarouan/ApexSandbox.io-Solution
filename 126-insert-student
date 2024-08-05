@@ -4,8 +4,6 @@ public Id insertStudent(String name, String email) {
     st.apxio__Email__c = email;
     insert st;
 
-    apxio__Student__c recordStudent = [Select id, apxio__Registration_Number__c
-                                    from apxio__Student__c 
-                                    where   apxio__Registration_Number__c =: st.id];
-    return recordStudent.apxio__Registration_Number__c;
+ 
+    return st.apxio__Registration_Number__c;
 }
