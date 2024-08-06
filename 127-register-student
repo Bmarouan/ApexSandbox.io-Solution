@@ -4,6 +4,7 @@ public String registerStudent(String name, String phone, String email) {
     student.apxio__Phone__c = phone;
     student.Name = name;
     insert student;
+    return student.apxio__Registration_Number__c;
 
 
 }
