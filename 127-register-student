@@ -5,8 +5,8 @@ public String registerStudent(String name, String phone, String email) {
     student.Name = name;
     insert student;
 
-    apxio__Student__c st = [Select id, apxio__Registration_Number__c
+    apxio__Student__c student = [Select id, apxio__Registration_Number__c
                             from apxio__Student__c
                             where id =: st.id];
-    return st.apxio__Registration_Number__c;
+    return student.apxio__Registration_Number__c;
 }
