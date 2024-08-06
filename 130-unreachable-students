@@ -5,6 +5,6 @@ public List<apxio__Student__c> selectUnreachableStudents() {
                                         email = null order by name Asc
 
 
-     ]
+     ]; 
      return student;
 }
