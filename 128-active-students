@@ -1,13 +1,11 @@
 public List<apxio__Student__c> selectActiveStudents() {
-
-     List<apxio__Student__c> activeStudent = new List<apxio__Student__c>();
-
-     if (activeStudent.Id != null && activeStudent.Name != null){
-         
-
-     insert activeStudent;
-
-     }
-     apxio__Student__c a = [Select id from apxio__Student__c where apxio__Active__c = true];
-     return a;
+  
+    List<apxio__Student__c> activeStudents = [
+        SELECT Id, Name, apxio__Active__c 
+        FROM apxio__Student__c 
+        WHERE apxio__Active__c = true AND Id != null AND Name != null
+    ];
+    
+  
+    return activeStudents;
 }
