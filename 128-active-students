@@ -1,6 +1,7 @@
 public List<apxio__Student__c> selectActiveStudents() {
 
-     List<apxio__Student__c> activeStudent = new  List<apxio__Student__c>();
+     List<apxio__Student__c> activeStudent = [Select id from apxio__Student__c where apxio__Active__c = true
+];
 
      if (activeStudent.Id != null && activeStudent.Name != null){
 
