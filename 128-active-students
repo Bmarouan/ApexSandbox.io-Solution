@@ -1,8 +1,9 @@
 public List<apxio__Student__c> selectActiveStudents() {
 
-     List<apxio__Student__c> activeStudent = new  List<apxio__Student__c>();
+     List<apxio__Student__c> activeStudent = new List<apxio__Student__c>(id, name);
 
      if (activeStudent.Id != null && activeStudent.Name != null){
+         
 
      insert activeStudent;
 
