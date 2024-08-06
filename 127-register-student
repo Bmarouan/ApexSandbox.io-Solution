@@ -7,6 +7,6 @@ public String registerStudent(String name, String phone, String email) {
 
     apxio__Student__c recordStudent = [Select id, apxio__Registration_Number__c
                             from apxio__Student__c
-                            where id =: st.id];
+                            where id =: student.id];
     return recordStudent.apxio__Registration_Number__c;
 }
