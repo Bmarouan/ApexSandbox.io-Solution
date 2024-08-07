@@ -1,13 +1,13 @@
 public void createCourseAndClass(String name, String description) {
   
     // Verify that the course name is not null
-    if (course.Name == null) {
+    if (course.name == null) {
         throw new IllegalArgumentException('Course name cannot be null');
     }
 
     // Create and insert the Course record
     apxio__Course__c course = new apxio__Course__c();
-    course.Name = courseName;
+    course.Name = name;
     if (description != null) {
         course.apxio__Course_Details__c = description;
     }
@@ -15,7 +15,7 @@ public void createCourseAndClass(String name, String description) {
 
     // Create the Class record
     apxio__Class__c classe = new apxio__Class__c();
-    classe.Name = name; 
+    classe.name = name; 
     classe.apxio__Course__c = course.Id;
 
     // Truncate the description to 255 characters if needed
