@@ -10,6 +10,8 @@ public void createCourseAndClass(String name, String description) {
     apxio__Class__c  classe = new apxio__Class__c();
     classe.name = course.name;
     classe.apxio__Description__c = course.apxio__Course_Details__c;
-    
+
+    classRecord.apxio__Course__c = course.Id;
+
     insert classe;
 }
