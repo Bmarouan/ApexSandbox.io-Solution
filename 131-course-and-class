@@ -9,7 +9,7 @@ public void createCourseAndClass(String name, String description) {
 
     apxio__Class__c  classe = new apxio__Class__c();
     classe.name = course.name;
-    if (description.length> 255){
+    if (description.length()> 255){
                 
             classe.apxio__Description__c = description.substring(0, 255);
 
