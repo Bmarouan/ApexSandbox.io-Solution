@@ -1,7 +1,8 @@
 public List<apxio__Student__c> selectStudentsWithoutContactInfo() {
     List<apxio__Student__c> student = [ Select id, name, apxio__Phone__c, apxio__Active__c 
                                         from  apxio__Student__c
-                                        where (id != null and name != null) and ( (apxio__Email__c = null and apxio__Phone__c = null) Or (apxio__Email__c = null or apxio__Phone__c = null))
+                                        where (apxio__Active__c = true) and
+                                        (apxio__Email__c = null or apxio__Phone__c = null))
                                         order by name Asc
 
     ];
