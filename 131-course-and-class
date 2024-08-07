@@ -11,8 +11,7 @@ public void createCourseAndClass(String name, String description) {
     classe.name = name;
     classe.apxio__Course__c = course.Id;
 
-      if (description != null) {
-        // Troncature de la description à 255 caractères si nécessaire
+      if (name != null && description != null) {
         if (description.length() > 255) {
             classe.apxio__Description__c = description.substring(0, 255);
         } else {
