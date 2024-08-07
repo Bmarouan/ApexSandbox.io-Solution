@@ -3,7 +3,7 @@ public void createCourseAndClass(String name, String description) {
 
         if (name != null && description != null){
             course.name = name;
-            course.description = description;
+            course.description = apxio__Course_Details__c;
         }
     insert course;
 
