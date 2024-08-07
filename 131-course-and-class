@@ -1,7 +1,7 @@
 public void createCourseAndClass(String name, String description) {
   
     // Verify that the courseName is not null
-    if (courseName == null) {
+    if (course.Name == null) {
         throw new IllegalArgumentException('Course name cannot be null');
     }
 
