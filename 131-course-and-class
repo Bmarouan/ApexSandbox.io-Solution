@@ -15,7 +15,7 @@ public void createCourseAndClass(String name, String description) {
 
 
     } else {
-            classe.apxio__Description__c = course.apxio__Course_Details__c; 
+            classe.apxio__Description__c = description; 
     }
 
     classe.apxio__Course__c = course.Id;
