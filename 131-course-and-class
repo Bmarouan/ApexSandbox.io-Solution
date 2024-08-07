@@ -8,7 +8,7 @@ public void createCourseAndClass(String name, String description) {
     insert course;
 
     apxio__Class__c  classe = new apxio__Class__c();
-  
+    classe.name = course.name;
     classe.apxio__Course__c = course.Id;
 
       if (description != null) {
