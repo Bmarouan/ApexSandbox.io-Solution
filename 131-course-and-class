@@ -1,9 +1,6 @@
 public void createCourseAndClass(String name, String description) {
   
-    // Verify that the course name is not null
-    if (course.name == null) {
-        throw new IllegalArgumentException('Course name cannot be null');
-    }
+
 
     // Create and insert the Course record
     apxio__Course__c course = new apxio__Course__c();
