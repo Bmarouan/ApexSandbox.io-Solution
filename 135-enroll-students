@@ -7,7 +7,7 @@ public void enrollStudents(List<String> emails, String className) {
     
     apxio__Class__c classe = [Select Id, Name FROM apxio__Class__c WHERE Name = :className LIMIT 1];
 
-    List <apxio__Class_Enrollment__c> enrollemnts = new apxio__Class_Enrollment__c();
+    List <apxio__Class_Enrollment__c> enrollemnts = new List <apxio__Class_Enrollment__c>();
 
     For ( apxio__Student__c st : student){
 
