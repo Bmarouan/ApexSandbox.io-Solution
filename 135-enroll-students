@@ -5,12 +5,14 @@ public void enrollStudents(List<String> emails, String className) {
                                     FROM apxio__Student__c
                                     WHERE apxio__Email__c IN :emails ];
     
-    apxio__Class__c classe = [Select Id, Name FROM apxio__Class__c WHERE Name = :className];
+    apxio__Class__c classe = [Select Id, Name FROM apxio__Class__c WHERE Name = :className LIMIT 1];
+
+    List <apxio__Class_Enrollment__c> enrollemnts = new apxio__Class_Enrollment__c();
 
     For ( apxio__Student__c st : student){
 
             apxio__Class_Enrollment__c classEnrollment = new apxio__Class_Enrollment__c();
-            st.apxio__Student__c = student.Id;
+            classEnrollment.apxio__Student__c = student.Id;
             classEnrollment.apxio__Offered_Class__c = classe.Id; 
     }
 
