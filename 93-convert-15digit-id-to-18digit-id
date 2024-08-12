@@ -5,4 +5,5 @@ public String convert15to18DigitId(String fifteenDigit)
     {
         return result;
     }
-    }
+    else {return 'no';}
+        }
