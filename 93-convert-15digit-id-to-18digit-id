@@ -1,9 +1,33 @@
 public String convert15to18DigitId(String fifteenDigit)
 {
-    String result = '-1';
-    if( fifteenDigit.length() != 15)
-    {
-        return result;
+
+    // Check if the input string length is 15
+    if (fifteenDigit == null || fifteenDigit.length() != 15) {
+        return '-1';
     }
-    else {return fifteenDigit;}
+    
+    // Define the mapping for checksum characters
+    String suffix = '';
+    String chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345';
+    
+    // Loop over each 5 character block of the 15 digit ID
+    for (Integer i = 0; i < 3; i++) {
+        Integer flags = 0;
+        
+        // Calculate the checksum flags for each block of 5 characters
+        for (Integer j = 0; j < 5; j++) {
+            // Check if the character is uppercase
+            if (Character.isUpperCase(fifteenDigit.charAt(i * 5 + j))) {
+                flags += 1 << j;
+            }
+        }
+        
+        // Append the corresponding checksum character from the chars string
+        suffix += chars.charAt(flags);
+    }
+    
+    // Return the 18-digit ID
+    return fifteenDigit + suffix;
+
+
         }
