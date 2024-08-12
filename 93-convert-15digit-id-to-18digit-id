@@ -17,7 +17,7 @@ public String convert15to18DigitId(String fifteenDigit)
         // Calculate the checksum flags for each block of 5 characters
         for (Integer j = 0; j < 5; j++) {
             // Check if the character is uppercase
-            if (Character.isUpperCase(fifteenDigit.charAt(i * 5 + j))) {
+            if (String.valueOf.isUpperCase(fifteenDigit.charAt(i * 5 + j))) {
                 flags += 1 << j;
             }
         }
