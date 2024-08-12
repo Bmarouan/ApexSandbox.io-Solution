@@ -26,7 +26,7 @@ public String convert15to18DigitId(String fifteenDigit)
         }
         
         // Append the corresponding checksum character from the chars string
-        suffix += chars.charAt(flags);
+        suffix += chars.substring(flags, flags + 1);
     }
     
     // Return the 18-digit ID
