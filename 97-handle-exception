@@ -1,8 +1,9 @@
 public String divide(Integer a, Integer b){
 Try {
-if (b!=0) {
-    
-    return String.valueOf(a/b)};
+    if (b!=0) {return String.valueOf(a/b)};
 }
-catch (Exceptions e){}
+catch (Exceptions e){
+
+    System.debug('error: '+ e.getMessage());
+}
 }
