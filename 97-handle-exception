@@ -1,6 +1,7 @@
 public String divide(Integer a, Integer b){
-Try {
-    a/b;
+Try { String result;
+  result =  String.VamueOf(a/b);
+  return result;
 }
 catch (Exceptions e){
 
