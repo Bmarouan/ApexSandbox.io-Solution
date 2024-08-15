@@ -3,7 +3,7 @@ Try { String result;
   result =  String.valueOf(a/b);
   return result;
 }
-catch (Exceptions e){
+catch (Exception e){
 
     System.debug('error: '+ e.getMessage());
 }
