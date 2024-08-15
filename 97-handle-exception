@@ -4,5 +4,5 @@ if (b!=0) {
     
     return String.valueOf(a/b)};
 }
-catch (exception e){}
+catch (Exceptions e){}
 }
