@@ -5,6 +5,6 @@ try {
 }
 catch (Exception e){
 
-    System.debug('error: '+ e.getMessage());
+    return e.getMessage();
 }
 }
