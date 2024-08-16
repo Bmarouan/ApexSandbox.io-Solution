@@ -1,5 +1,5 @@
 public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
-   List<Account> acc = [ Select Id, BillingCity from Account where acc.Id = : Id order by Id Desc];
+   List<Account> acc = [ Select Id, BillingCity from Account where acc.Id = : Id order by Id Desc limit 1];
 
    String result = acc?.BillingCity?. != null ? acc.BillingCity : 'No city';
 
