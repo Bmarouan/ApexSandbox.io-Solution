@@ -7,5 +7,5 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
         fieldValues.add(value);
     }
     
-    return String.valueOf(fieldValues);
+    return fieldValues;
 }
