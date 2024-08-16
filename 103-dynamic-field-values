@@ -1,9 +1,9 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
-   List<String> fieldValues = new List<String>();
+   List<Object> fieldValues = new List<Object>();
     
     for (String field : fields) {
-        String value = acc.get(field);
+        Object value = acc.get(field);
         fieldValues.add(value);
     }
     
