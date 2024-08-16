@@ -1,11 +1,12 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
-   List<Object> fieldValues = new List<Object>();
-    
+ List<String> fieldValues = new List<String>();
+
     for (String field : fields) {
         Object value = acc.get(field);
-       String.valueOf(fieldValues.add(value));
+        // Convert the Object to String and handle null values appropriately
+        fieldValues.add(value != null ? String.valueOf(value) : null);
     }
-    
+
     return fieldValues;
 }
