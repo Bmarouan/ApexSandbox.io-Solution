@@ -4,7 +4,7 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
     
     for (String field : fields) {
         Object value = acc.get(field);
-        fieldValues.add(String.valueOf(value));
+       String.valueOf(fieldValues.add(value));
     }
     
     return fieldValues;
