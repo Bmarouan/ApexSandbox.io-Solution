@@ -3,7 +3,7 @@ List<Account> acc = new List<Account>();
 
 
 for (Account ac : accounts){
-   String jsonAcc =  JSON.serialise(ac);
+   String jsonAcc =  JSON.serialize(ac);
     acc.add(jsonAcc);
 }
 return acc;
