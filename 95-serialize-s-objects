@@ -1,5 +1,5 @@
 public String getAccountsInJSONFormat(List<Account> accounts){
-List<Account> acc = new List<Account>();
+Account acc = new <Account>();
 
 
 for (Account ac : accounts){
