@@ -6,7 +6,9 @@ for (Account ac : accounts){
    String jsonAcc =  JSON.serialize(ac);
     acc.add(jsonAcc);
 }
-return acc;
+accounts.add.(acc);
+return accounts;
+
 
 
 }
