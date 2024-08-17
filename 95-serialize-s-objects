@@ -1,13 +1,6 @@
 public String getAccountsInJSONFormat(List<Account> accounts){
-Account acc = new Account();
-
-
-for (Account ac : accounts){
-   String jsonAcc =  JSON.serialize(ac);
-    acc.add(jsonAcc);
-}
-accounts.add(acc);
-return accounts;
+List<Account> acc = JSON.serialize(accounts);
+return acc;
 
 
 
