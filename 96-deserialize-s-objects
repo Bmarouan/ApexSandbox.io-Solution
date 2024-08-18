@@ -1,5 +1,5 @@
 public List<Account> getAccountsFromJSONString(String inputJSON){
-    if (inputJSON == null || inputJSON.isEmpty()){
+    if (inputJSON == null){
          return null; }
     else {
 
